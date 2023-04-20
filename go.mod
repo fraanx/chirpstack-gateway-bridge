@@ -1,11 +1,11 @@
-module github.com/brocaar/chirpstack-gateway-bridge
+module github.com/fraanx/chirpstack-gateway-bridge
 
 go 1.17
 
 require (
-	github.com/brocaar/lorawan v0.0.0-20230210103351-84b137ed1908
 	github.com/chirpstack/chirpstack/api/go/v4 v4.3.1
 	github.com/eclipse/paho.mqtt.golang v1.4.2
+	github.com/fraanx/lorawan v0.0.3-0.20230419134300-ef37a1060c96
 	github.com/go-zeromq/zmq4 v0.15.0
 	github.com/golang-jwt/jwt/v4 v4.5.0
 	github.com/goreleaser/goreleaser v0.106.0
