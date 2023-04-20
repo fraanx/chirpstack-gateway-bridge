@@ -3,8 +3,8 @@ package structs
 import (
 	"encoding/hex"
 
-	"github.com/brocaar/lorawan"
-	"github.com/brocaar/lorawan/band"
+	"github.com/fraanx/lorawan"
+	"github.com/fraanx/lorawan/band"
 	"github.com/chirpstack/chirpstack/api/go/v4/gw"
 	"github.com/pkg/errors"
 )

@@ -5,11 +5,11 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/backend/basicstation"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/backend/concentratord"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/backend/events"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/backend/semtechudp"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/backend/basicstation"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/backend/concentratord"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/backend/events"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/backend/semtechudp"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/config"
 	"github.com/chirpstack/chirpstack/api/go/v4/gw"
 )
 

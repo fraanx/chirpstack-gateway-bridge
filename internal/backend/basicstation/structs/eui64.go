@@ -8,7 +8,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/brocaar/lorawan"
+	"github.com/fraanx/lorawan"
 )
 
 var euiRegexp = regexp.MustCompile(`\w{2}-\w{2}-\w{2}-\w{2}-\w{2}-\w{2}-\w{2}-\w{2}`)

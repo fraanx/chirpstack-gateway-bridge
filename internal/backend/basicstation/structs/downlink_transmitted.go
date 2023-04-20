@@ -1,7 +1,7 @@
 package structs
 
 import (
-	"github.com/brocaar/lorawan"
+	"github.com/fraanx/lorawan"
 	"github.com/chirpstack/chirpstack/api/go/v4/gw"
 )
 

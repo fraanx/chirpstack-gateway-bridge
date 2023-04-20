@@ -12,9 +12,9 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/integration"
-	"github.com/brocaar/lorawan"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/config"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/integration"
+	"github.com/fraanx/lorawan"
 	"github.com/chirpstack/chirpstack/api/go/v4/gw"
 )
 

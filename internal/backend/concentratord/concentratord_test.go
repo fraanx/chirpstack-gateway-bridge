@@ -13,9 +13,9 @@ import (
 	"github.com/stretchr/testify/suite"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/backend/events"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
-	"github.com/brocaar/lorawan"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/backend/events"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/config"
+	"github.com/fraanx/lorawan"
 	"github.com/chirpstack/chirpstack/api/go/v4/gw"
 )
 

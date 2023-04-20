@@ -5,9 +5,9 @@ import (
 	"math"
 	"time"
 
-	"github.com/brocaar/lorawan"
-	"github.com/brocaar/lorawan/band"
-	"github.com/brocaar/lorawan/gps"
+	"github.com/fraanx/lorawan"
+	"github.com/fraanx/lorawan/band"
+	"github.com/fraanx/lorawan/gps"
 	"github.com/chirpstack/chirpstack/api/go/v4/gw"
 	"github.com/pkg/errors"
 	"google.golang.org/protobuf/types/known/durationpb"

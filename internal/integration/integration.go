@@ -4,9 +4,9 @@ import (
 	"github.com/pkg/errors"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/integration/mqtt"
-	"github.com/brocaar/lorawan"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/config"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/integration/mqtt"
+	"github.com/fraanx/lorawan"
 	"github.com/chirpstack/chirpstack/api/go/v4/gw"
 )
 

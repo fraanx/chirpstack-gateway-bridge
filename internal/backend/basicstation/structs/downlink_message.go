@@ -7,7 +7,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/brocaar/lorawan/band"
+	"github.com/fraanx/lorawan/band"
 	"github.com/chirpstack/chirpstack/api/go/v4/gw"
 )
 

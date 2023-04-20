@@ -1,6 +1,6 @@
 # ChirpStack Gateway Bridge
 
-![Tests](https://github.com/brocaar/chirpstack-gateway-bridge/actions/workflows/main.yml/badge.svg?branch=master)
+![Tests](https://github.com/fraanx/chirpstack-gateway-bridge/actions/workflows/main.yml/badge.svg?branch=master)
 
 ChirpStack Gateway Bridge is a service which converts LoRa<sup>&reg;</sup> Packet Forwarder protocols
 into a ChirpStack [common data-format](https://github.com/chirpstack/chirpstack/blob/master/api/proto/gw/gw.proto) (JSON and Protobuf).
@@ -30,4 +30,4 @@ more information.
 ## License
 
 ChirpStack Gateway Bridge is distributed under the MIT license. See 
-[LICENSE](https://github.com/brocaar/chirpstack-gateway-bridge/blob/master/LICENSE).
+[LICENSE](https://github.com/fraanx/chirpstack-gateway-bridge/blob/master/LICENSE).

@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/brocaar/lorawan"
-	"github.com/brocaar/lorawan/band"
+	"github.com/fraanx/lorawan"
+	"github.com/fraanx/lorawan/band"
 	"github.com/chirpstack/chirpstack/api/go/v4/gw"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/types/known/durationpb"

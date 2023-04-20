@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config/sx1301v1"
-	"github.com/brocaar/lorawan"
-	"github.com/brocaar/lorawan/band"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/config"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/config/sx1301v1"
+	"github.com/fraanx/lorawan"
+	"github.com/fraanx/lorawan/band"
 	"github.com/chirpstack/chirpstack/api/go/v4/gw"
 	"github.com/pkg/errors"
 )

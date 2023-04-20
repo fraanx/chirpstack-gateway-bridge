@@ -1,7 +1,7 @@
 package semtechudp
 
 import (
-	"github.com/brocaar/lorawan"
+	"github.com/fraanx/lorawan"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
 )

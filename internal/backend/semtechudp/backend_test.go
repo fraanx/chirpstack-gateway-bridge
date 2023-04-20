@@ -16,9 +16,9 @@ import (
 	"google.golang.org/protobuf/types/known/durationpb"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/backend/semtechudp/packets"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
-	"github.com/brocaar/lorawan"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/backend/semtechudp/packets"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/config"
+	"github.com/fraanx/lorawan"
 	"github.com/chirpstack/chirpstack/api/go/v4/common"
 	"github.com/chirpstack/chirpstack/api/go/v4/gw"
 )

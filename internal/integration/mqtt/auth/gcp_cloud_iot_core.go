@@ -10,8 +10,8 @@ import (
 	jwt "github.com/golang-jwt/jwt/v4"
 	"github.com/pkg/errors"
 
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
-	"github.com/brocaar/lorawan"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/config"
+	"github.com/fraanx/lorawan"
 )
 
 // GCPCloudIoTCoreAuthentication implements the Google Cloud IoT Core authentication.
