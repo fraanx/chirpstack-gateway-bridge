@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/brocaar/chirpstack-api/go/v3/gw"
+	"github.com/fraanx/chirpstack-v3-api/go/v3/gw"
 	"github.com/gofrs/uuid"
 
 	paho "github.com/eclipse/paho.mqtt.golang"
@@ -13,8 +13,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
-	"github.com/brocaar/lorawan"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/config"
+	"github.com/fraanx/lorawan"
 )
 
 type MQTTBackendTestSuite struct {

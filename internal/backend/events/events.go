@@ -1,6 +1,6 @@
 package events
 
-import "github.com/brocaar/lorawan"
+import "github.com/fraanx/lorawan"
 
 // Subscribe event
 type Subscribe struct {

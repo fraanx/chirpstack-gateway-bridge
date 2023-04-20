@@ -1,8 +1,8 @@
 package structs
 
 import (
-	"github.com/brocaar/chirpstack-api/go/v3/gw"
-	"github.com/brocaar/lorawan"
+	"github.com/fraanx/chirpstack-v3-api/go/v3/gw"
+	"github.com/fraanx/lorawan"
 )
 
 // DownlinkTransmitted implements the downlink transmitted message.

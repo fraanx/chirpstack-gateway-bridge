@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/backend/events"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/backend/stats"
-	"github.com/brocaar/lorawan"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/backend/events"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/backend/stats"
+	"github.com/fraanx/lorawan"
 )
 
 // errors

@@ -12,7 +12,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/config"
 )
 
 var cfgFile string // config file
@@ -23,7 +23,7 @@ var rootCmd = &cobra.Command{
 	Short: "abstracts the packet_forwarder protocol into Protobuf or JSON over MQTT",
 	Long: `ChirpStack Gateway Bridge abstracts the packet_forwarder protocol into Protobuf or JSON over MQTT
 	> documentation & support: https://www.chirpstack.io/gateway-bridge/
-	> source & copyright information: https://github.com/brocaar/chirpstack-gateway-bridge`,
+	> source & copyright information: https://github.com/fraanx/chirpstack-gateway-bridge`,
 	RunE: run,
 }
 

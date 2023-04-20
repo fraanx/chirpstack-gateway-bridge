@@ -5,9 +5,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/brocaar/chirpstack-api/go/v3/gw"
-	"github.com/brocaar/lorawan"
-	"github.com/brocaar/lorawan/band"
+	"github.com/fraanx/chirpstack-v3-api/go/v3/gw"
+	"github.com/fraanx/lorawan"
+	"github.com/fraanx/lorawan/band"
 )
 
 // JoinRequest implements the join-request message.

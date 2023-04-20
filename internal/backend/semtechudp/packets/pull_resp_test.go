@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/brocaar/chirpstack-api/go/v3/common"
-	"github.com/brocaar/chirpstack-api/go/v3/gw"
+	"github.com/fraanx/chirpstack-v3-api/go/v3/common"
+	"github.com/fraanx/chirpstack-v3-api/go/v3/gw"
 	"github.com/golang/protobuf/ptypes"
 	"github.com/stretchr/testify/require"
 )

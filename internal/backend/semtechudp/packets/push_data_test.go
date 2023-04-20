@@ -8,10 +8,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/brocaar/chirpstack-api/go/v3/common"
-	"github.com/brocaar/chirpstack-api/go/v3/gw"
-	"github.com/brocaar/lorawan"
-	"github.com/brocaar/lorawan/gps"
+	"github.com/fraanx/chirpstack-v3-api/go/v3/common"
+	"github.com/fraanx/chirpstack-v3-api/go/v3/gw"
+	"github.com/fraanx/lorawan"
+	"github.com/fraanx/lorawan/gps"
 )
 
 func TestPushDataTest(t *testing.T) {

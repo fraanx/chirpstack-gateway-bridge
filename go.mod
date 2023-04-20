@@ -1,10 +1,10 @@
-module github.com/brocaar/chirpstack-gateway-bridge
+module github.com/fraanx/chirpstack-gateway-bridge
 
 go 1.18
 
 require (
-	github.com/brocaar/chirpstack-api/go/v3 v3.12.5
-	github.com/brocaar/lorawan v0.0.0-20220207095711-d675789e16ab
+	github.com/fraanx/chirpstack-v3-api/go/v3 v3.13.2
+	github.com/fraanx/lorawan v0.0.2
 	github.com/eclipse/paho.mqtt.golang v1.4.2
 	github.com/go-zeromq/zmq4 v0.7.0
 	github.com/gofrs/uuid v4.2.0+incompatible

@@ -4,12 +4,12 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/brocaar/chirpstack-api/go/v3/common"
-	"github.com/brocaar/chirpstack-api/go/v3/gw"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config/sx1301v1"
-	"github.com/brocaar/lorawan"
-	"github.com/brocaar/lorawan/band"
+	"github.com/fraanx/chirpstack-v3-api/go/v3/common"
+	"github.com/fraanx/chirpstack-v3-api/go/v3/gw"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/config"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/config/sx1301v1"
+	"github.com/fraanx/lorawan"
+	"github.com/fraanx/lorawan/band"
 	"github.com/pkg/errors"
 )
 

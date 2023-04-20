@@ -3,7 +3,7 @@ package concentratord
 import (
 	"context"
 	"encoding/base64"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/filters"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/filters"
 	"sync"
 	"time"
 
@@ -13,10 +13,10 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/brocaar/chirpstack-api/go/v3/gw"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/backend/events"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
-	"github.com/brocaar/lorawan"
+	"github.com/fraanx/chirpstack-v3-api/go/v3/gw"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/backend/events"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/config"
+	"github.com/fraanx/lorawan"
 )
 
 // Backend implements a ConcentratorD backend.

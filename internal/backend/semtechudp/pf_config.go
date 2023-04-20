@@ -11,9 +11,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/brocaar/chirpstack-api/go/v3/common"
-	"github.com/brocaar/chirpstack-api/go/v3/gw"
-	"github.com/brocaar/lorawan"
+	"github.com/fraanx/chirpstack-v3-api/go/v3/common"
+	"github.com/fraanx/chirpstack-v3-api/go/v3/gw"
+	"github.com/fraanx/lorawan"
 )
 
 // radioBandwidthPerChannelBandwidth defines the bandwidth that a single radio

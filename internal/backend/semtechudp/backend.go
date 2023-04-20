@@ -13,12 +13,12 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/brocaar/chirpstack-api/go/v3/gw"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/backend/events"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/backend/semtechudp/packets"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/filters"
-	"github.com/brocaar/lorawan"
+	"github.com/fraanx/chirpstack-v3-api/go/v3/gw"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/backend/events"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/backend/semtechudp/packets"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/config"
+	"github.com/fraanx/chirpstack-gateway-bridge/internal/filters"
+	"github.com/fraanx/lorawan"
 )
 
 // udpPacket represents a raw UDP packet.
