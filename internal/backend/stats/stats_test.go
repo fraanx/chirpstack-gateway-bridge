@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/chirpstack/chirpstack/api/go/v4/gw"
+	"github.com/fraanx/chirpstack/api/go/v4/gw"
 )
 
 func TestStats(t *testing.T) {

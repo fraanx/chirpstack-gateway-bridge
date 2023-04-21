@@ -13,8 +13,8 @@ import (
 	"google.golang.org/protobuf/types/known/timestamppb"
 
 	"github.com/fraanx/lorawan"
-	"github.com/chirpstack/chirpstack/api/go/v4/common"
-	"github.com/chirpstack/chirpstack/api/go/v4/gw"
+	"github.com/fraanx/chirpstack/api/go/v4/common"
+	"github.com/fraanx/chirpstack/api/go/v4/gw"
 )
 
 // loRaDataRateRegex contains a regexp for parsing the LoRa data-rate string.

@@ -8,7 +8,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/chirpstack/chirpstack/api/go/v4/gw"
+	"github.com/fraanx/chirpstack/api/go/v4/gw"
 )
 
 // PullRespPacket is used by the server to send RF packets and associated

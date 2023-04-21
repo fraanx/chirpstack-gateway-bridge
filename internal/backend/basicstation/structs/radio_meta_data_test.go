@@ -11,7 +11,7 @@ import (
 	"github.com/fraanx/lorawan"
 	"github.com/fraanx/lorawan/band"
 	"github.com/fraanx/lorawan/gps"
-	"github.com/chirpstack/chirpstack/api/go/v4/gw"
+	"github.com/fraanx/chirpstack/api/go/v4/gw"
 )
 
 func TestSetRadioMetaDataToProto(t *testing.T) {

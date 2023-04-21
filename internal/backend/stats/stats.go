@@ -4,7 +4,7 @@ import (
 	"encoding/hex"
 	"sync"
 
-	"github.com/chirpstack/chirpstack/api/go/v4/gw"
+	"github.com/fraanx/chirpstack/api/go/v4/gw"
 	"google.golang.org/protobuf/proto"
 )
 

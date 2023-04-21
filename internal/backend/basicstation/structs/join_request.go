@@ -7,7 +7,7 @@ import (
 
 	"github.com/fraanx/lorawan"
 	"github.com/fraanx/lorawan/band"
-	"github.com/chirpstack/chirpstack/api/go/v4/gw"
+	"github.com/fraanx/chirpstack/api/go/v4/gw"
 )
 
 // JoinRequest implements the join-request message.

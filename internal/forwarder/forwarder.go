@@ -10,7 +10,7 @@ import (
 	"github.com/fraanx/chirpstack-gateway-bridge/internal/integration"
 	"github.com/fraanx/chirpstack-gateway-bridge/internal/metadata"
 	"github.com/fraanx/lorawan"
-	"github.com/chirpstack/chirpstack/api/go/v4/gw"
+	"github.com/fraanx/chirpstack/api/go/v4/gw"
 )
 
 // Setup configures the forwarder.

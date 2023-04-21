@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/chirpstack/chirpstack/api/go/v4/gw"
+	"github.com/fraanx/chirpstack/api/go/v4/gw"
 	"google.golang.org/protobuf/proto"
 
 	paho "github.com/eclipse/paho.mqtt.golang"

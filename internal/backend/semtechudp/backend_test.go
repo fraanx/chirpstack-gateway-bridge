@@ -19,8 +19,8 @@ import (
 	"github.com/fraanx/chirpstack-gateway-bridge/internal/backend/semtechudp/packets"
 	"github.com/fraanx/chirpstack-gateway-bridge/internal/config"
 	"github.com/fraanx/lorawan"
-	"github.com/chirpstack/chirpstack/api/go/v4/common"
-	"github.com/chirpstack/chirpstack/api/go/v4/gw"
+	"github.com/fraanx/chirpstack/api/go/v4/common"
+	"github.com/fraanx/chirpstack/api/go/v4/gw"
 )
 
 type BackendTestSuite struct {

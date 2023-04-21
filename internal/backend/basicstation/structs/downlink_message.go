@@ -8,7 +8,7 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/fraanx/lorawan/band"
-	"github.com/chirpstack/chirpstack/api/go/v4/gw"
+	"github.com/fraanx/chirpstack/api/go/v4/gw"
 )
 
 // DownlinkFrame implements the downlink message.

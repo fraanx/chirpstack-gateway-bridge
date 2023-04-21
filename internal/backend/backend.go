@@ -10,7 +10,7 @@ import (
 	"github.com/fraanx/chirpstack-gateway-bridge/internal/backend/events"
 	"github.com/fraanx/chirpstack-gateway-bridge/internal/backend/semtechudp"
 	"github.com/fraanx/chirpstack-gateway-bridge/internal/config"
-	"github.com/chirpstack/chirpstack/api/go/v4/gw"
+	"github.com/fraanx/chirpstack/api/go/v4/gw"
 )
 
 var backend Backend

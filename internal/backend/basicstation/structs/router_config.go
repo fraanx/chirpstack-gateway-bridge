@@ -9,7 +9,7 @@ import (
 	"github.com/fraanx/chirpstack-gateway-bridge/internal/config/sx1301v1"
 	"github.com/fraanx/lorawan"
 	"github.com/fraanx/lorawan/band"
-	"github.com/chirpstack/chirpstack/api/go/v4/gw"
+	"github.com/fraanx/chirpstack/api/go/v4/gw"
 	"github.com/pkg/errors"
 )
 

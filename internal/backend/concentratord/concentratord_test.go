@@ -16,7 +16,7 @@ import (
 	"github.com/fraanx/chirpstack-gateway-bridge/internal/backend/events"
 	"github.com/fraanx/chirpstack-gateway-bridge/internal/config"
 	"github.com/fraanx/lorawan"
-	"github.com/chirpstack/chirpstack/api/go/v4/gw"
+	"github.com/fraanx/chirpstack/api/go/v4/gw"
 )
 
 type BackendTestSuite struct {
