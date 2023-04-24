@@ -23,6 +23,9 @@ var loRaDataRateRegex = regexp.MustCompile(`SF(\d+)BW(\d+)`)
 // lrFHSSDataRateRegex contains the regexp for parsing the LR-FHSS data-rate string.
 var lrFHSSDataRateRegex = regexp.MustCompile(`M0CW(\d+)`)
 
+// XSSDataRateRegex contains the regexp for parsing the XSS data-rate string.
+var XSSDataRateRegex = regexp.MustCompile(`SF(\d+)BW(\d+)`)
+
 // PushDataPacket type is used by the gateway mainly to forward the RF packets
 // received, and associated metadata, to the server.
 type PushDataPacket struct {
@@ -320,7 +323,66 @@ func getUplinkFrame(gatewayID lorawan.EUI64, stat *Stat, rxpk RXPK, FakeRxInfoTi
 		}
 	}
 
-	return &frame, nil
+	// XSS data-rate
+	if rxpk.DatR.XSS != "" {
+		// parse e.g. SF12BW250 into separate variables
+		match := XSSDataRateRegex.FindStringSubmatch(rxpk.DatR.XSS)
+		if len(match) != 3 {
+			return &frame, errors.New("backend/semtechudp/packets: could not parse Xss data-rate")
+		}
+
+		// cast variables to ints
+		sf, err := strconv.Atoi(match[1])
+		if err != nil {
+			return &frame, errors.Wrap(err, "backend/semtechudp/packets: could not convert sf to int")
+		}
+
+		bw, err := strconv.Atoi(match[2])
+		if err != nil {
+			return &frame, errors.Wrap(err, "backend/semtechudp/packets: could not parse bandwidth to int")
+		}
+
+		cr := gw.CodeRate_CR_UNDEFINED
+		switch rxpk.CodR {
+		case "4/5":
+			cr = gw.CodeRate_CR_4_5
+		case "4/6":
+			cr = gw.CodeRate_CR_4_6
+		case "4/7":
+			cr = gw.CodeRate_CR_4_7
+		case "4/8":
+			cr = gw.CodeRate_CR_4_8
+		case "3/8":
+			cr = gw.CodeRate_CR_3_8
+		case "2/6":
+			cr = gw.CodeRate_CR_2_6
+		case "1/4":
+			cr = gw.CodeRate_CR_1_4
+		case "1/6":
+			cr = gw.CodeRate_CR_1_6
+		case "5/6":
+			cr = gw.CodeRate_CR_5_6
+		case "4/5LI":
+			cr = gw.CodeRate_CR_LI_4_5
+		case "4/6LI":
+			cr = gw.CodeRate_CR_LI_4_6
+		case "4/8LI":
+			cr = gw.CodeRate_CR_LI_4_8
+		default:
+			return &frame, errors.New(fmt.Sprintf("backend/semtechudp:packets: invalid CodR: %s", rxpk.CodR))
+		}
+
+		frame.TxInfo.Modulation = &gw.Modulation{
+			Parameters: &gw.Modulation_Xss{
+				Xss: &gw.XssModulationInfo{
+					Bandwidth:       uint32(bw) * 1000,
+					SpreadingFactor: uint32(sf),
+					CodeRate:        cr,
+				},
+			},
+		}
+	}
+		return &frame, nil
 }
 
 // UnmarshalBinary decodes the packet from Semtech UDP binary form.

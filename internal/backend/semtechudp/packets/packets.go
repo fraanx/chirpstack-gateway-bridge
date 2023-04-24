@@ -105,6 +105,7 @@ type DatR struct {
 	LRFHSS string
 	LoRa   string
 	FSK    uint32
+	XSS    string
 }
 
 // MarshalJSON implements the json.Marshaler interface.
@@ -114,6 +115,9 @@ func (d DatR) MarshalJSON() ([]byte, error) {
 	}
 	if d.LRFHSS != "" {
 		return []byte(`"` + d.LRFHSS + `"`), nil
+	}
+	if d.XSS != "" {
+		return []byte(`"` + d.XSS + `"`), nil
 	}
 	return []byte(strconv.FormatUint(uint64(d.FSK), 10)), nil
 }
@@ -127,6 +131,7 @@ func (d *DatR) UnmarshalJSON(data []byte) error {
 
 		if strings.HasPrefix(str, "SF") {
 			d.LoRa = str
+			d.XSS = str
 		} else {
 			d.LRFHSS = str
 		}

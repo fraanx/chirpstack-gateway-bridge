@@ -68,7 +68,7 @@ type TXPK struct {
 	Tmst *uint32 `json:"tmst,omitempty"` // Send packet on a certain timestamp value (will ignore time)
 	Tmms *int64  `json:"tmms,omitempty"` // Send packet at a certain GPS time (GPS synchronization required)
 	Freq float64 `json:"freq"`           // TX central frequency in MHz (unsigned float, Hz precision)
-	Modu string  `json:"modu"`           // Modulation identifier "LORA" or "FSK"
+	Modu string  `json:"modu"`           // Modulation identifier "LORA" or "FSK" or "XSS"
 	DatR DatR    `json:"datr"`           // LoRa datarate identifier (eg. SF12BW500) || FSK datarate (unsigned, in bits per second)
 	CodR string  `json:"codr,omitempty"` // LoRa ECC coding rate identifier
 	FDev uint16  `json:"fdev,omitempty"` // FSK frequency deviation (unsigned integer, in Hz)
@@ -132,6 +132,31 @@ func GetPullRespPacket(protoVersion uint8, randomToken uint16, frame *gw.Downlin
 		packet.Payload.TXPK.Modu = "FSK"
 		packet.Payload.TXPK.DatR.FSK = fsk.Datarate
 		packet.Payload.TXPK.FDev = uint16(fsk.FrequencyDeviation)
+	}
+
+	if xss := txInfo.GetModulation().GetXss(); xss != nil {
+		packet.Payload.TXPK.Modu = "XSS"
+		packet.Payload.TXPK.DatR.XSS = fmt.Sprintf("SF%dBW%d", xss.SpreadingFactor, xss.Bandwidth/1000)
+		packet.Payload.TXPK.IPol = xss.PolarizationInversion
+
+		switch xss.GetCodeRate() {
+		case gw.CodeRate_CR_4_5:
+			packet.Payload.TXPK.CodR = "4/5"
+		case gw.CodeRate_CR_4_6:
+			packet.Payload.TXPK.CodR = "4/6"
+		case gw.CodeRate_CR_4_7:
+			packet.Payload.TXPK.CodR = "4/7"
+		case gw.CodeRate_CR_4_8:
+			packet.Payload.TXPK.CodR = "4/8"
+		case gw.CodeRate_CR_LI_4_5:
+			packet.Payload.TXPK.CodR = "4/5LI"
+		case gw.CodeRate_CR_LI_4_6:
+			packet.Payload.TXPK.CodR = "4/6LI"
+		case gw.CodeRate_CR_LI_4_8:
+			packet.Payload.TXPK.CodR = "4/8LI"
+		default:
+			return PullRespPacket{}, fmt.Errorf("invalid CodeRate: %s", xss.GetCodeRate())
+		}
 	}
 
 	if imm := txInfo.GetTiming().GetImmediately(); imm != nil {
